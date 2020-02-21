@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <div class="action-wrapper">
+    <h3>User</h3>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="navigateToAddEmpPage()"
+    >
+      New User
+    </button>
+  </div>
+  <div class="emp-card card-general" *ngFor="let user of userList">
+    <div class="emp-card__info">
+      <div class="emp-card__name">{{ user.username }}</div>
+      <span class="emp-card__joinDate"
+        >Join Date: <span>{{ user.createdDate }}</span></span
+      >
+    </div>
+    <div class="emp-card__wrapper-mp">
+      <div class="emp-card__phone">{{ user.phone }}</div>
+      <div class="emp-card__mail">{{ user.email }}</div>
+      <div class="emp-card__phone">{{ user.roleId }}</div>
+    </div>
+  </div>
+</div>

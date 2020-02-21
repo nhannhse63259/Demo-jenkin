@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col header-space">
+      <h3>Categories</h3>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="navigateToAddProjectPage()"
+      >
+        New Category
+      </button>
+    </div>
+  </div>
+  <div
+    class="project-card card-general"
+    *ngFor="let category of categoriesList"
+    (click)="navigateToProjectDetails(project.id)"
+  >
+    <span class="project-card__name">{{ category.type }}</span>
+    <button
+      type="button"
+      class="btn btn-warning view-details-btn"
+      (click)="navigateToAddProjectPage()"
+    >
+      View Details
+    </button>
+  </div>
+</div>

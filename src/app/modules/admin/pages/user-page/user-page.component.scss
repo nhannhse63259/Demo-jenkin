@@ -1,0 +1,86 @@
+.action-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+.card-general {
+  box-shadow: 0 0.5rem 1rem 0 rgba(44, 51, 73, 0.1);
+  border-radius: 10px;
+}
+
+.emp-card {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  transition: all 0.3s;
+  border: transparent solid 1px;
+  cursor: pointer;
+  &:hover {
+    border-color: #2b85e7;
+    border-radius: 4px;
+    box-shadow: 0 8px 8px rgba(1, 67, 163, 0.24), 0 0 8px rgba(1, 67, 163, 0.12),
+      0 6px 18px rgba(43, 133, 231, 0.12);
+    transform: translateY(-2px);
+  }
+  &__avt {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  &__info {
+    margin-left: 10px;
+  }
+  &__name {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  &__joinDate {
+    font-size: 12px;
+    span {
+      color: #4286f4;
+      border: 1px solid #4286f4;
+      padding: 2px;
+      border-radius: 2px;
+    }
+  }
+  &__wrapper-mp {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  &__mail {
+    background: #0069d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 26px;
+    padding: 0px 10px;
+    color: white;
+    margin-right: 5px;
+  }
+  &__phone {
+    background: #f5af19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 26px;
+    padding: 0px 10px;
+    color: white;
+    margin-right: 5px;
+  }
+}

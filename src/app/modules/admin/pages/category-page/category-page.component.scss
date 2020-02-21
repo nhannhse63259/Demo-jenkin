@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans&display=swap");
+
+.header-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  button {
+    font-size: 16px;
+  }
+}
+
+.view-details-btn {
+  color: white;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+.card-general {
+  box-shadow: 0 0.5rem 1rem 0 rgba(44, 51, 73, 0.1);
+  border-radius: 10px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  border-radius: 5px;
+  height: 100px;
+  margin: 10px 0;
+  cursor: pointer;
+  &__name {
+    font-size: 18px;
+    font-weight: 500px;
+    color: white;
+    // border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border-radius: 10px;
+    background-color: #4a00e0;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+  }
+  &__status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: orange;
+    color: white;
+    border-radius: 4px;
+  }
+  &__date {
+    color: #4286f4;
+    border: 1px solid #4286f4;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  &:hover {
+    border-color: #2b85e7;
+    border-radius: 4px;
+    box-shadow: 0 8px 8px rgba(1, 67, 163, 0.24), 0 0 8px rgba(1, 67, 163, 0.12),
+      0 6px 18px rgba(43, 133, 231, 0.12);
+    transform: translateY(-2px);
+  }
+}
+
+.pending {
+  background-color: red;
+}
+
+.in-progress {
+  background-color: orange;
+}
+
+.finish {
+  background-color: green;
+}
+
+.pagination-projects {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-status {
+  select {
+    width: 200px;
+  }
+}
